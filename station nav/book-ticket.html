@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book-ticket.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="inner">
+                <button id="back-h"><a href="index.html">Home</a></button>
+            </div>
+        </div>
+        <div class="book " id="book">
+            <div id="booking" class="booking-ticket">
+                <h2>Book Your Ticket</h2>
+                <form id="booking-form">
+                    <div id="row">
+                            <label id="label-fontsize">Aadhar No.</label>
+                            <input type="text" maxlength="12" id="Aadhar-num" placeholder="Enter your adhar number" required>
+                    </div>
+                    <div id="row">
+                        <label id="label-fontsize">Source</label>
+                        <input type="text" id="source" placeholder="Enter source station" required>
+                    </div>
+                    <div id="row">
+                        <label id="label-fontsize">Destination</label>
+                        <input type="text" id="destination" placeholder="Enter destination station" required>
+                    </div>
+                    <div id="row">
+                        <label id="label-fontsize">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div id="row">
+                        <label id="label-fontsize">Class</label>
+                        <select id="class">
+                            <option value="1A">1AC</option>
+                            <option value="2A">2AC</option>
+                            <option value="SL">Sleeper</option>
+                            <option value="General">General</option>
+                        </select>
+                    </div>
+                    <div id="row">
+                        <button type="submit" id="gen-ticket">Generate Ticket</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="ticket " class="active hidden">
+            <div class="your-ticket">
+                <h2>Happy Journey</h2>
+                <p>Your ticket booked successfully...</p>
+                <h4>Your Ticket Details 
+                </h4>
+                <div class="details">
+                    
+                    <div class="ticket-details">
+                        <p><strong>Adhar Number :  <span id="ticket-adhar-num"></span></strong></p>
+                        <p><strong>Source : </strong> <span id="ticket-source"></span></p>
+                        <p><strong>Destination : </strong> <span id="ticket-destination"></span></p>
+                        <p><strong>Date : </strong> <span id="ticket-date"></span></p>
+                        <p><strong>Class : </strong> <span id="ticket-class"></span></p>
+                    </div>
+                    <div id="qrcodes">
+                        <div id="qrcode"></div>
+                    </div>
+                </div><!--details ends-->
+            </div><!--your-ticket ends here!-->
+        </div><!--ticket ends here-->
+        <div class="return-n-b">
+            <div class="inner-r-n-b hidden">
+                <button id="back-h" class="set-h-w">
+                    Book new Ticket
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="book-ticket.js"></script>
+</body>
+</html>
