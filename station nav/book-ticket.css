@@ -3,6 +3,11 @@
     padding: 0;
     
 }
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(train-8359657_1280.png);
+    background-size: cover;
+    
+}
 .container{
     height: 100vh;
     width: 100vw;
@@ -10,6 +15,7 @@
     align-items: center;
     justify-content: start;
     flex-direction: column;
+    
 }
 .navbar{
     height: 10vh;
@@ -54,7 +60,8 @@ a{
     height: 14rem;
     width: 12rem;
     padding: 1rem;
-    background-color: #007bff;
+    background: linear-gradient(rgba(0, 234, 230, 0.822),rgba(0,0,234,.86));
+
     border-radius: 10px;
 }
 #booking h2{
@@ -146,9 +153,9 @@ form select{
 }
 .your-ticket{
     font-family: cursive;
-    height: 18rem;
+    height: 17.3rem;
     width: 24rem;
-    background-color : #0d2e41;
+    background-color : rgba(110, 105, 104, 0.349);
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -203,4 +210,50 @@ img{
     height: 1.5rem;
     width: 8rem;
     cursor: pointer;
+}
+
+#orange{
+    color: rgb(243, 186, 30);
+}
+#green{
+    color: rgb(34, 228, 34);
+}
+#og{
+    background-color: black;
+    padding: 2px;
+}
+#footer{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    font-size: 0.5rem;
+    background-color: black;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.6rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer-content{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
